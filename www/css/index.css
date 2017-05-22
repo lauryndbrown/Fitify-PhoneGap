@@ -2,4 +2,6 @@ body{
     //Position is changed to avoid clashing with the iphone top bar
     margin-top:50px;
 }
-
+.page{
+    display: none;
+}
