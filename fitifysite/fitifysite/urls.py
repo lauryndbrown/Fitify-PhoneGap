@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from fitify.api import CharacterResource
+character_resource = CharacterResource()
 urlpatterns = [
     url(r'^fitify/', include('fitify.urls')),
+    url(r'^api/', include(character_resource.urls)),
     url(r'^admin/', admin.site.urls),
 ]
