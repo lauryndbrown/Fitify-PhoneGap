@@ -1,6 +1,6 @@
 var visible_page;
 $(document).ready(function(){
-    set_visible("#splash-page");
+//    set_visible("#splash-page");
     set_visible("#login-page");
 });
 function set_visible(page){

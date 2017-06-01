@@ -26,5 +26,6 @@ v1_api.register(UserResource())
 urlpatterns = [
     url(r'^fitify/', include('fitify.urls')),
     url(r'^api/', include(v1_api.urls)),
+    url('', include('social_django.urls', namespace='social')),
     url(r'^admin/', admin.site.urls),
 ]
